@@ -24,10 +24,11 @@ overflow-y: hidden;
   border: 1px solid #ccc;
 }
 .row {
+
   display: flex;
-  margin: 0 auto;
-  width: 50%;
-  padding-left: 27.5rem;
+  border: 1px solid red;
+  justify-content: center;
+ 
 }
 .row h3{
     color: #c2c1ce;
