@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Toggle from './components/toggle button';
+import { ReactComponent as Top } from './assests/top.svg';
+import { ReactComponent as Bottom } from './assests/bottom.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='top'>
+        <Top className='bg-top' />
+      </div>
+      <Toggle />
+      <div className='bottom'>
+         <Bottom className='bg-bottom' />
+      </div>
     </div>
   );
 }

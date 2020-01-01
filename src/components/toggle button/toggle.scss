@@ -1,0 +1,54 @@
+.toggle {
+  // this can be removed depending on the pricing modal
+overflow-y: hidden;
+}
+.pricing{
+    color: #6e728e ;
+}
+.toggle input[type="checkbox"] {
+  display: none;
+}
+.toggle label {
+  cursor: pointer;
+}
+.toggle label .toggle-track {
+  display: block;
+  height: 2rem;
+  width: 3rem;
+  background: #7d82e4;
+  border-radius: 20px;
+  position: relative;
+  margin-top: .7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+}
+.row {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  padding-left: 27.5rem;
+}
+.row h3{
+    color: #c2c1ce;
+    font-size: 16px;
+}
+
+.toggle .toggle-track:before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  padding: 2px;
+  top: .3rem;
+  right: .3rem;
+  transition: right 0.2s ease-in;
+}
+
+.toggle input[type="checkbox"]:checked + label .toggle-track:before {
+  background: #fff;
+  right: 1.5rem;
+}
