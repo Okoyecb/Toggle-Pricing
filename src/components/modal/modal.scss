@@ -1,8 +1,40 @@
 .moda {
-    width: 386px;
-    height: max-content;
-    background: #FFFFFF;
+    width: 300px;
+    height: 55vh;
+    background: whitesmoke;
     border: 1px solid #F3F3FF;
     box-sizing: border-box;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    z-index: 99;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+
+  .bt{
+    width: 75%;
+    margin: 0 auto;
+    background-color: #7d82e4;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  .price{
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
 }
+        .moda:hover{
+            // display: none;
+            background-color: #7d82e4;
+            
+
+            .bt{
+              background-color: #fff;
+              color: #7d82e4
+            }
+        }
+       

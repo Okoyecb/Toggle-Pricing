@@ -1,0 +1,18 @@
+.contain{
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow-x: hidden;
+  .bg-top {
+    position: absolute;
+    right: 0;
+    height: 95vh;
+    // z-index: -3;
+  }
+  
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // z-index: -3;
+  }
+}

@@ -1,6 +1,4 @@
 .toggle {
-  // this can be removed depending on the pricing modal
-overflow-y: hidden;
 }
 .pricing{
     color: #6e728e ;
@@ -32,6 +30,8 @@ overflow-y: hidden;
 .row h3{
     color: #c2c1ce;
     font-size: 16px;
+    // border:  1px solid red;
+    margin-top: 1rem;
 }
 
 .toggle .toggle-track:before {
@@ -51,4 +51,12 @@ overflow-y: hidden;
 .toggle input[type="checkbox"]:checked + label .toggle-track:before {
   background: #fff;
   right: 1.5rem;
+}
+
+.cards{
+  display: flex;
+  // background: yellow;
+  justify-content: center;
+  height: 65vh;
+  align-items: center;
 }

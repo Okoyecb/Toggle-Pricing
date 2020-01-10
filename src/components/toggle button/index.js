@@ -1,6 +1,8 @@
 import React from 'react';
-
+import  Modal from '../modal/index'
+import Data from  '../data'
 import './toggle.scss'
+
 
 const Toggle = () => (
   <div class="toggle">
@@ -8,9 +10,17 @@ const Toggle = () => (
   <input type="checkbox" id="toggleInput" name="toggleInput" />
   <label for="toggleInput" className='row'>
     <h3>Anually</h3>
-    <span class="toggle-track"></span>
+    <span className="toggle-track"></span>
     <h3>Monthly</h3>
   </label>
+  <div className='cards'>
+  {
+    Data.map((card, i )=> (
+      <Modal key={i}  carditem={card}/>
+      // console.log(Data)
+    ))
+  }
+  </div>
 </div>
 )
 
